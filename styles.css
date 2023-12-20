@@ -68,6 +68,19 @@ body {
     margin-top: 0rem!important;
 }
 
+@media (max-width: 767px) {
+  .row.no-gutters {
+    height: auto;
+  }
+
+  .col-md-6.order-md-2.card-body.text-center {
+    border-left: none;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+}
 
 
 
