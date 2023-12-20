@@ -21,7 +21,7 @@ body {
   margin: 0; /* Certifique-se de que não haja margens para ocupar toda a altura */
 }
 
-.col-md-6.order-md-2.card-body.text-center {
+.col-md-6.col-12.card-body.text-center{
   box-sizing: border-box;
   border-left: 2px solid grey;
   padding: 0px;
@@ -36,7 +36,7 @@ body {
   height: 135px;
 }
 
-.col-md-6.order-md-2.card-body.text-center button {
+.btn.btn-warning.btn-lg {
   background-color: #FF9933;
   color: white;
   border: 0px;
@@ -47,20 +47,21 @@ body {
 
 }
 
-.custom-card .logo-labcardio img {
-  width: 120px;
-  height: 120px;
-}
-
 .card-body a{
     color: inherit; 
     text-decoration: none; 
 }
 
-.card-body img{
+.logo-lab{
   max-width: 100%;
   height: auto;
   width: 150px;
+}
+
+.col-md-6.col-12.card-body.text-center img{
+  max-width: 100%;
+  height: auto;
+  width: 130px;
 
 }
 
@@ -69,18 +70,54 @@ body {
 }
 
 @media (max-width: 767px) {
-  .row.no-gutters {
+  .custom-card {
     height: auto;
+    margin-top: 380px; 
+    padding: 20px;
   }
 
-  .col-md-6.order-md-2.card-body.text-center {
+  .row.no-gutters {
+    flex-direction: column;
+  }
+
+  .col-md-6.col-12.card-body.text-center{
     border-left: none;
     height: auto;
     margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .col-md-6.order-md-2.card-body.text-center img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Ajustado o tamanho da fonte do h1 */
+  }
+
+  .lead {
+    font-size: 0.9rem;
+  }
+
+  .btn-lg {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .custom-card .logo-labcardio img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .card-body img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
   }
 }
+
 
 
 
